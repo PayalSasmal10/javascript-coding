@@ -13,12 +13,13 @@ function usingLoopPalindrome(str) {
     }
 }
 
-console.log(usingLoopPalindrome("mom"));
-console.log(usingLoopPalindrome("payal"));
+// console.log(usingLoopPalindrome("mom"));
+// console.log(usingLoopPalindrome("payal"));
 
 //2nd way: using split
 function usingSplit(str){
-    let latest_str = str.split("").reverse().join("");
+    console.log(str.trim());
+    let latest_str = str.trim().split("").reverse().join("");
     if(str === latest_str){
         return "Palindrome";
     }else{
@@ -44,4 +45,4 @@ function usingRecursion(str){
     }
 }
 
-console.log(usingRecursion("testing"));
+// console.log(usingRecursion("testing"));
