@@ -17,7 +17,7 @@ function addData(newdata) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       datas.push(newdata);
-      let error = true;
+      let error = false;
       if(!error){
         resolve();
       }else{
