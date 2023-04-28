@@ -11,20 +11,42 @@ const ages = [12, 70, 54, 34, 89, 90, 43, 76, 33, 88, 20];
 // 1.forEach
 
 for (let i = 0; i < companies.length; i++) {
-   console.log(companies[i]);
-  }
+  console.log(companies[i]);
+}
 
-console.log("ForEachStarting..................................................");
+console.log(
+  "ForEachStarting.................................................."
+);
 
 //Normal Function
 /*companies.forEach(function(company, index){
     console.log(company.name);
 });*/
 
-
 // using arrow function
 companies.forEach((company, index) => console.log(company));
 
+console.log(
+  "FilterStarting....................................................................."
+);
 
+//2.filter
 
+for (let f = 0; f < ages.length; f++) {
+  if (ages[f] >= 21) {
+    console.log(ages[f]);
+  }
+}
 
+console.log("........................................................................");
+ages.forEach((age) => {if(age >= 21) console.log(age)});
+
+console.log("........................................................................");
+const fAge = ages.filter((age) => age >= 40);
+console.log(fAge);
+
+console.log("........................................................................");
+
+// only need service based company
+const cFilter = companies.filter((company) => company.category === "Service based");
+console.log(cFilter);
