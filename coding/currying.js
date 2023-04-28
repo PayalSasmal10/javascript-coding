@@ -1,4 +1,5 @@
-// advanced way to invoke the function. we can currying our function in 2 ways
+// advanced way to invoke the function. we can currying our function in 2 ways. we can borrow the
+// feature of an object/function - this is the use case of currying.
 
 // 1.using bind
 function multiply(x, y) {
