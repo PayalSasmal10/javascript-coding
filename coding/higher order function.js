@@ -64,3 +64,20 @@ console.log("...................................................................
 
 const ageStorted = ages.sort((a,b) => (a - b));
 console.log(ageStorted);
+
+
+console.log("ReduceStarting........................................................................");
+
+//reduce
+
+let total = 0;
+for (let k=0; k<ages.length;k++){
+  total += ages[k]; 
+}
+
+console.log(total);
+
+console.log("........................................................................");
+
+const rSum = ages.reduce((age, total=0) => total+age);
+console.log(rSum);
