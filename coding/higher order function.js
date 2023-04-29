@@ -26,9 +26,7 @@ console.log(
 // using arrow function
 companies.forEach((company, index) => console.log(company));
 
-console.log(
-  "FilterStarting....................................................................."
-);
+console.log("FilterStarting.....................................................................");
 
 //2.filter
 
@@ -50,3 +48,19 @@ console.log("...................................................................
 // only need service based company
 const cFilter = companies.filter((company) => company.category === "Service based");
 console.log(cFilter);
+
+console.log("MapStarting........................................................................");
+
+const mMap = companies.map((company, index) => {return `${company.name} ${company.category}`});
+console.log(mMap);
+
+console.log("SortStarting........................................................................");
+
+// sort
+const storted = companies.sort((c1,c2) => (c1.start > c2.start) ? 1 : -1);
+console.log(storted);
+
+console.log("........................................................................");
+
+const ageStorted = ages.sort((a,b) => (a - b));
+console.log(ageStorted);
