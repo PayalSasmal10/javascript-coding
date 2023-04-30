@@ -13,7 +13,7 @@ let name2 = {
     lname: "Sasmal"
 }
 
-// call function
+// call function- it's boorow the feature from other functions.
 printFunction.call(name1);
 printFunction.call(name2);
 printFunction.call(name1, "howrah", "westbengal");
