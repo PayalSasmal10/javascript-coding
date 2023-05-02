@@ -1,6 +1,6 @@
 // rest opearator is used to put the rest of some values provided by user in javascript array.
 // IT is used to combine the arrays or objects. and it returns array.
-// In ES5 arguments were introduced in rest operator but it was not the rela array. it was a 
+// In ES5 arguments were introduced in rest operator but it was not the real array. it was a 
 // virtual array. we can't use map,sort, set function to this. but we can use them in rest operator.
 
 // using string
