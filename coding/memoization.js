@@ -10,6 +10,25 @@ function calc(n){
     return sum;
 }
 
+function memoization(func){
+    let cache = {};
+    return function(...args){
+        let n = args[0];
+        if(n in cache){
+            return cache[n];
+        }else{
+            cache[n] = func(n);
+            return cache[n];
+        }
+
+    }
+}
+
 console.time();
-console.log(calc(6));
+const efficiency = memoization(calc);
+console.log(efficiency(6));
+console.timeEnd();
+
+console.time();
+console.log(efficiency(6));
 console.timeEnd();
