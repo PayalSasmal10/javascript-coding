@@ -12,4 +12,4 @@ function findDuplicateString(str){
     return obj;
 }
 
-console.log(findDuplicateString("payal"));
+console.log(findDuplicateString("canaada"));
