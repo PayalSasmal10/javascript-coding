@@ -22,7 +22,7 @@ console.log(z);
 z();
 
 // 3rd example
-
+console.log("...............................");
 function x2() {
   var a = 9;
   function y() {
