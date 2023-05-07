@@ -1,4 +1,5 @@
 // call function after few times of users once enter to search bar. don't call unwanted funcction call
+// differnce between 2 key stroke event then make a function call called debouncing
 
 let count = 0
 
