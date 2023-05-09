@@ -44,3 +44,26 @@ let custFilter = customFilter(arr, (currentVariable) => {return currentVariable%
 );
 
 console.log(custFilter);
+
+console.log("Reducer function...................");
+// using reducer function
+
+let reducerFn = arr.reduce((initialValue,currentValue) => initialValue + currentValue, 0);
+console.log(reducerFn);
+console.log(".............................");
+
+// custom Reduce function
+function CustReduce(arr, initialVal, callBackReducerFn){
+  let redValue = initialVal;
+  for(let i =0; i<arr.length; i++){
+    redValue = callBackReducerFn(redValue, arr[i]);
+
+  }
+  return redValue;
+
+
+}
+
+let custRedu = CustReduce(arr, 0, (initialV, CurrentV) => initialV + CurrentV);
+
+console.log(custRedu);
