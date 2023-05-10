@@ -31,3 +31,15 @@ function add(x) {
 }
 
 console.log(add(4)(5)(1)());
+
+// infinite currying example-2
+
+function mul(x){
+  return function(y){
+    if (y) return mul(x*y);
+    return x;
+    
+  }
+}
+
+console.log(mul(2)(3)(4)());
