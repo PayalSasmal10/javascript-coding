@@ -7,14 +7,15 @@
 */
 console.log("start");
 
-
 function test () {
     console.log("testing");
 }
+
 test();
+
 setTimeout(() => {
     console.log("callbacks");
-}, 10);
+}, 0);
 
 Promise.resolve().then(()=> console.log("promise"));
 
