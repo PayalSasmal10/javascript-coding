@@ -7,19 +7,27 @@
 */
 console.log("start");
 
-function test () {
-    console.log("testing");
+function test() {
+  console.log("testing");
 }
 
 test();
 
 setTimeout(() => {
-    console.log("callbacks");
+  console.log("callbacks");
 }, 0);
 
-Promise.resolve().then(()=> console.log("promise"));
-
+Promise.resolve().then(() => console.log("promise"));
 
 // test();
 
 console.log("end");
+
+console.log("2nd interview quetions..............................................");
+const object = {
+  message: "Hello World!",
+  logMessage() {
+    console.log(this.message);
+  },
+};
+setTimeout(object.logMessage, 0);
