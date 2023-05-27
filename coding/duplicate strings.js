@@ -12,7 +12,9 @@ function findDuplicateString(str){
     return obj;
 }
 
-console.log(findDuplicateString("canaada"));
+
+
+console.log(findDuplicateString([1, 4, 4, 2, 1]));
 
 arr = [3,2, 1, 1, 1,5,6,3,8]
 

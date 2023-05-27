@@ -1,4 +1,4 @@
-// rate limit the function call
+// rate limit the function call 
 // differnce between 2 function call is 300ms(certain amount of time) called throttling
 
 const expensive = () => {
