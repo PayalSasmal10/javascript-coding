@@ -18,14 +18,3 @@ const result = arr.Avg();
 console.log(result);
 
 
-var a = 0;
-let b = 0;
-const c = 0;
-if (true) {
-   var a = 1;
-   let b = 1;
-   const c = 1;
-}
-console.log(a); 
-console.log(b); 
-console.log(c);
