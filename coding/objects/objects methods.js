@@ -2,6 +2,7 @@ const person = {
     firstName: "John",
     lastName: "Doe",
     id: 5566,
+    today: new Date(),
     fullName: function() {
       return this.firstName + " " + this.lastName;
     }
@@ -28,3 +29,26 @@ for(let x in person){
     s += person[x] + " ";
 }
 console.log(s);
+
+// using objects.values()
+
+console.log("using objects.values()......................");
+
+const myArray = Object.values(person);
+console.log(myArray);
+
+// using JSON.stringify
+
+console.log("using JSON Stringify..................................");
+
+let myString = JSON.stringify(person);
+console.log(myString);
+
+// stringify cant stringify a function. It can be overcome using stringify.
+
+person.fullName = person.fullName.toString();
+
+let myString1 = JSON.stringify(person);
+console.log(myString1);
+
+// stringify an array- we will see in array section.
