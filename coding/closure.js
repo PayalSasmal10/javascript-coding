@@ -24,16 +24,21 @@ z();
 // 3rd example
 console.log("...............................");
 function x2() {
-  var a = 9;
+  var e = 9;
   function y() {
-    console.log(a);
+    console.log("e", e);
   }
-  a = 900;
+  e = 900;
   return y;
 }
+// x2();
 z1 = x2();
-console.log(z1);
+
+// console.log(z1());
 z1();
+
+
+console.log("...............................");
 
 // 4th example
 
