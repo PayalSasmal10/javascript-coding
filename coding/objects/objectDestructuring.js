@@ -76,3 +76,29 @@ const idss = getPropertyValueDestruct('id');
 const namess = getPropertyValueDestruct('name');
 console.log(idss);
 console.log(namess);
+
+console.log("..............................................");
+//destructuring in functions
+
+// ex-1
+function logEmployee({name, dept}){
+    console.log(`${name} is a ${dept}`);
+}
+
+logEmployee(newEmployee);
+
+// ex-2
+function getUser(){
+    return {
+        'name': 'Oli',
+        'ages' : 45,
+    }
+}
+
+// traditional way to get the age value
+const obj = getUser();
+console.log(obj.ages);
+
+// detrsucturing way
+const { ages } = getUser();
+console.log(ages);
