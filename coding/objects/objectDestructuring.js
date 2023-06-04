@@ -102,3 +102,31 @@ console.log(obj.ages);
 // detrsucturing way
 const { ages } = getUser();
 console.log(ages);
+
+// lopping through an object
+console.log("..............................................");
+
+const users = [
+    { 
+        'name': 'Alex',
+        'address': '15th Park Avenue',
+        'age': 43
+    },
+    { 
+        'name': 'Bob',
+        'address': 'Canada',
+        'age': 53
+    },
+    { 
+        'name': 'Carl',
+        'address': 'Bangalore',
+        'age': 26
+    }
+  ];
+
+ const mapUsed = users.map(tesst => {console.log(tesst)});
+//  mapUsed;
+
+for(let {name, age} of users){
+    console.log(`${name} is ${age}`);
+}
