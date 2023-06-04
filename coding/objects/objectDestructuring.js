@@ -25,7 +25,54 @@ const age = employee.age ? employee.age : 28;
 
 console.log(employee);
 
-// 
+// 2nd way
+console.log("..............................................");
 const {dept: {empAge = 25}} = employee;
 console.log(empAge);
 console.log(employee);
+
+// 3rd way
+console.log("..............................................");
+const {name, dept, id, message = `${name} id is ${id}`} = employee;
+console.log(message);
+
+
+// alias
+console.log("..............................................");
+const newEmployee = {
+    id: 007,
+    name: 'Payal',
+    dept: 'Spy',
+};
+
+const {dept: depratment} = newEmployee;
+console.log(depratment);
+
+// Handle dynamic name 
+console.log("..............................................");
+
+//tradition way
+let key = 'id';
+console.log(newEmployee[key]);
+
+// normal way
+function getPropertyValue(key){
+    return newEmployee[key];
+}
+
+const ids = getPropertyValue('id');
+const names = getPropertyValue('name');
+console.log(ids);
+console.log(names);
+
+// destructuring way
+
+function getPropertyValueDestruct(keys){
+   const { [keys]: returnValue } = newEmployee;
+   return returnValue;
+}
+
+const idss = getPropertyValueDestruct('id');
+const namess = getPropertyValueDestruct('name');
+console.log(idss);
+console.log(namess);
