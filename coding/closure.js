@@ -51,7 +51,9 @@ function b() {
     a = 900;
     return y;
   }
-  z1 = x2();
+  z1 = x3();
   console.log(z1);
   z1();
 }
+
+b();
