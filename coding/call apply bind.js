@@ -28,3 +28,19 @@ console.log("..........................................");
 // bind
 let printBindFunction = printFunction.bind(name1, "testing bind", "from testing bind");
 printBindFunction();
+
+
+console.log("..................................................");
+const printData = function (lastname) {
+    console.log(this.name + " " + lastname + " is" + " from " + this.address);
+  }
+  
+  const obj = {
+    name : "Payal",
+    address: "Howrah"
+  }
+  
+  printData.call(obj, "Sasmal");
+  printData.apply(obj, ["Sasmal1"]);
+  const test = printData.bind(obj, "sasmal2");
+  test();

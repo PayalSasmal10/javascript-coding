@@ -42,5 +42,12 @@ function mul(x){
   }
 }
 
+function mul(x) {
+  return function(y){
+    if(y) return mul(x*y);
+    return x;
+  }
+}
+
 console.log(mul(2)(3)(4)());
 
