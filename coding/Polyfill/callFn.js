@@ -1,4 +1,4 @@
-// Normal way
+// Normal way - https://medium.com/developers-arena/how-to-create-a-polyfill-for-call-apply-and-bind-917ae110edc3
 function printMyData(state){
     console.log(this.firstname + " " + this.lastname + " is from " + state + " and DOB is " + this.DOB);
 }
