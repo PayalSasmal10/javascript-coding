@@ -14,7 +14,6 @@ let returnBind = obj.getName.bind(objModified, "WB");
 returnBind();
 
 // Polyfill
-
 Function.prototype.myBind = function (obj, ...args) {
     obj.myMethod = this;
     console.log(obj);
