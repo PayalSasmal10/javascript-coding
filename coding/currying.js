@@ -11,7 +11,6 @@ let multiplyByTwo = multiply.bind(this, 2);
 multiplyByTwo(3);
 
 // 2. using closure
-
 let multiplyCloser = function (x) {
   return function (y) {
     console.log(x * y);
@@ -50,4 +49,10 @@ function mul(x) {
 }
 
 console.log(mul(2)(3)(4)());
+
+console.log(arrowPrint);
+arrowPrint();
+let arrowPrint = () => {
+  console.log("arrow print");
+};
 
