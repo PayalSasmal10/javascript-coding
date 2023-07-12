@@ -3,10 +3,10 @@ const example5 = {
     name: "Payal",
     details: () =>{
       console.log("First", this.name);
-    //   const printDetails = () => {
-    //     console.log("inner", this.name);
-    //   }
-    //   printDetails();
+      function printDetails() {
+        console.log("inner", this.name);
+      }
+      printDetails();
     }
   };
   example5.details();
