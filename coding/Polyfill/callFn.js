@@ -37,3 +37,4 @@ Function.prototype.custCall = function(obj, ...args){
 
 printMyData.custCall(obj, "Karnataka")
 
+
