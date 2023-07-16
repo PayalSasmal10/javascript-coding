@@ -1,6 +1,6 @@
 /*
 Iterator is a spacial object which is used for implementating iterable protocol(
-    a iterable protocol is a used tp create custom iteration.
+    a iterable protocol is a used tp create custom iteration. like for...of
 ) 
 using next() method.
 */
