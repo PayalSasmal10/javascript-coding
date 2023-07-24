@@ -16,3 +16,6 @@ console.log(m.delete(1));
 console.log(m);
 m.clear();
 console.log(m);
+
+let test = new Map();
+console.log("test", test);
