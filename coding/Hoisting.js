@@ -109,7 +109,7 @@ function abc () {
 
 abc();
 
-const validInput = ["first", 1, "second", 2];
-if(validInput.includes(input)){
-  someFunction()
-}
+// const validInput = ["first", 1, "second", 2];
+// if(validInput.includes(input)){
+//   someFunction()
+// }
