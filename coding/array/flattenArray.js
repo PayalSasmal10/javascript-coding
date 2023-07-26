@@ -22,3 +22,26 @@ console.log(flattenArray1);
 console.log("using spread operator....................................");
 let flattenArray2 = [...[...arr]];
 console.log(flattenArray2);
+
+// using reduce method
+console.log("using reduce method....................................");
+let flattenArray3 = arr.reduce((initV, item) => initV.concat(item));
+console.log(flattenArray3);
+
+console.log("using recurssion method....................................");
+// using recursion.
+function fetchArray(arr){
+    let flatend = [];
+    for(let item of arr){
+        if(Array.isArray(item)){
+            flatend = flatend.concat(fetchArray(item));
+        }else{
+            flatend.push(item)
+        }
+    }
+    return flatend;
+}
+
+
+
+console.log(fetchArray(arr));
