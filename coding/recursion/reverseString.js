@@ -11,3 +11,9 @@ function iterativeWay(str){
 }
 
 console.log(iterativeWay('awesome'));
+
+// using recursion
+function reverseRecursion(str){
+    if(str.length <=1) return str;
+    return reverseRecursion(str.slice(1)) + str[0];
+}
