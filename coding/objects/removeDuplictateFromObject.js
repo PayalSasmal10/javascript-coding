@@ -7,7 +7,7 @@ const arr = [
   // ouput [  { city: "delhi", food: "pani puri" },  { city: "mumbai", food: "vada pav" }]
 
 
-  // using reducer
+  // using filter
 function removeDuplicate(arr){
     return arr.filter((currentItem, index, array) => {
         console.log("currentItem", currentItem);
@@ -18,3 +18,10 @@ function removeDuplicate(arr){
 }
 
 console.log(removeDuplicate(arr));
+
+// using reducer
+function removeDuplicateUsingReducer(arr){
+    // const test = arr.reduce((accV, item) => )
+}
+
+console.log(removeDuplicateUsingReducer(arr));
