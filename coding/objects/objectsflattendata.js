@@ -16,20 +16,21 @@ const obj = {
   },
 };
 
-function fetchIds(obj){
-    let id = [];
-    function extractID(obj){
-        for(let key in obj){
-            if(key === "id"){
-                id.push(obj[key]);
-            }else if(typeof obj[key] === 'object'){
-                extractID(obj[key]);
-            }
-        }
+function fetchIds(obj) {
+  let id = [];
+  function extractID(obj) {
+    for (let key in obj) {
+      if (key === "id") {
+        id.push(obj[key]);
+      } else if (typeof obj[key] === "object") {
+        extractID(obj[key]);
+      }
     }
-    extractID(obj);
-    return id;
+  }
+  extractID(obj);
+  return id;
 }
 
 let getData = fetchIds(obj);
 console.log(getData);
+
