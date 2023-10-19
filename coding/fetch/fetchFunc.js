@@ -6,7 +6,6 @@ async function GetData(url){
     const jsonData = await response.json();
     console.log(jsonData);
 }
-
 GetData(url);
 
 function getData(url) {
