@@ -12,7 +12,7 @@ Promise.all([promise1, promise2, promise3]).then((value) => {
 // Akshay saini examples
 console.log("Akshay saini examples......");
 const p1 = new Promise((resolve, reject) => {
-    setTimeout(() => resolve("p1 success"), 3000);
+    setTimeout(() => reject("p1 Fail"), 3000);
 });
 
 const p2 = new Promise((resolve, reject) => {
