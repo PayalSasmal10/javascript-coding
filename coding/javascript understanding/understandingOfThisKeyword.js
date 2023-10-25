@@ -1,3 +1,4 @@
+
 let hero = {
     _name: "John Deo",
     getSecurityIdentity: function(){
@@ -33,3 +34,16 @@ fn();
 // obj.method(fn, 1);
 
 console.log("..................................");
+
+const obj = {
+    name: "hi",
+    fn : function (){
+        console.log(this.name);
+    },
+    fn1 : () => {
+        console.log(this.name);
+    }
+};
+
+obj.fn(); // Obj expressions
+obj.fn1() // window
