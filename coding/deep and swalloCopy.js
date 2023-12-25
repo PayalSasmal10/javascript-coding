@@ -12,6 +12,10 @@ console.log(c);
 c[1].list = ["chicken", "flour", "water"];
 console.log(c);
 console.log(ingredients_list);
-console.log(b);
 
 // 1 deep copy
+let d = Object.assign([], ingredients_list);
+console.log(d);
+d[1].list = ['eggs', 'cake', 'water'];
+console.log(d);
+console.log(ingredients_list);

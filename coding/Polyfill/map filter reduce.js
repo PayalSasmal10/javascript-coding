@@ -53,17 +53,14 @@ console.log(reducerFn);
 console.log(".............................");
 
 // custom Reduce function
-function CustReduce(arr, initialVal, callBackReducerFn){
-  let redValue = initialVal;
-  for(let i =0; i<arr.length; i++){
-    redValue = callBackReducerFn(redValue, arr[i]);
-
+Array.prototype.custReduce = function(callBackFn, initV) {
+  let reduceV = initV;
+  for(let i=0; i< this.length; i++){
+    reduceV = callBackFn(reduceV, this[i]);
   }
-  return redValue;
-
-
+  return reduceV;
 }
 
-let custRedu = CustReduce(arr, 0, (initialV, CurrentV) => initialV + CurrentV);
+let custRedu = arr.custReduce((initialV, item) => initialV + item,0);
 
 console.log(custRedu);
