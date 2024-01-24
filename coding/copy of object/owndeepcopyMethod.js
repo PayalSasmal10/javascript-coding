@@ -10,4 +10,10 @@ function deepCopy(obj){
             newObj[key] = deepCopy(obj[key]);
         }
     }
+    return newObj;
 }
+
+let obj2 = deepCopy(obj1);
+obj2.d.e = 20;
+console.log(obj1);
+console.log(obj2);
