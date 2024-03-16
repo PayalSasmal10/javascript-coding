@@ -19,7 +19,7 @@ function same (arr1, arr2) {
         if(correctIndex === -1){
             return false;
         }
-        arr2.splice(correctIndex, 1);[4]
+        arr2.splice(correctIndex, 1);
     }
     return true;
 }
