@@ -9,5 +9,5 @@ arr.forEach((obj) => {
         result[key] = obj[key]
     }
   }
-  console.log(result);
-});
+});  
+console.log(result);
