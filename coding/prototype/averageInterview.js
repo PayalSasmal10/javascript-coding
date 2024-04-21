@@ -1,5 +1,5 @@
 // How to write a function without passing any arguments to the avg function and make an average
-arr = [1, 2, 4, 5, 7, 8, 3, 5,10],
+let arr = [1, 2, 4, 5, 7, 8, 3, 5,10];
 
 
 

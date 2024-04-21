@@ -16,7 +16,7 @@ const findPath = (obj, path) => {
   for(let key of findkeyFromPath){
     if(obj.hasOwnProperty(key)){
         obj = obj[key];
-    }else return undefined;
+    }else return;
   }
   return obj;
 };
