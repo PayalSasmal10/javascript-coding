@@ -16,4 +16,5 @@ function reverseWithOutMethod(str){
 
 console.log(reverseWithOutMethod("Hi there"));
 
-// 
+// split convert a string to an array. 
+// and join convert the array to a string.
