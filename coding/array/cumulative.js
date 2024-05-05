@@ -21,3 +21,7 @@ function cumulativeArray(arr){
 }
 
 console.log(cumulativeArray(arr));
+
+// using reducer
+
+const reducerAcc = arr => arr.reduce((acc, num) => [...acc, acc.length? acc[acc.length-1]+ num : num])
